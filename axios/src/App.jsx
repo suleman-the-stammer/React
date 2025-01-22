@@ -16,11 +16,11 @@ function App() {
     <>
     <div>
     {myData.map((posts)=>{
-        
+        const {userId , title , body }= posts;
         return (
-          <div key={posts.id}>
-          <h2>{posts.title}</h2>
-          <h3>{posts.body}</h3>
+          <div key={userId}>
+          <h2>{title}</h2>
+          <h3>{body}</h3>
                 </div>
         )
       
